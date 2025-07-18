@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC STUDENT BUS PASS APPLICATION</title>
+</head>
+<body>
+    <img src="./Images/TSRTC.jpg" alt="TSRTC" width="50" height="50" style="display: block; margin: auto;">
+    <h2 style="text-align: center;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+    <h3 style="text-align: center;">STUDENT BUS PASS APPLICATION UPTO SSC</h3>
+    <form autocomplete="off" action="submit_form.php" method="post" enctype="multipart/form-data">
+        <!-- 1. Applicant Details <br> -->
+        <fieldset>
+            <legend>1. Applicant Details</legend>
+            <div>
+            1.1 Name*: <input type="text" name=" Applicant_name" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1.2 Father's / Guardian's Name*: <input type="text" name="guardian_name" required>
+            </div><br>
+            <div>
+            1.3 Date of Birth*: <input type="date" name="dob" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1.4 Gender*: 
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female" > Female
+            </div><br>
+            <div>
+            Age as on: 
+            <input type="number" name="age" placeholder="Years" required> Years
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             1.5 Aadhar Number*: <input type="text" name="aadhar_number" required>
+            </div><br>
+            <div>
+            1.6 Mobile Number*: <input type="tel" name="mobile_number" required pattern="[0-9]{10}">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1.7 Is employee children
+            <input type="radio" name="employee_children" value="Yes" required> Yes
+            <input type="radio" name="employee_children" value="No"> No
+            </div><br>
+            <div>
+            1.8 Email ID: <input type="email" name="email_id">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1.9 Photo: <input type="file" name="photo" accept="image/*">
+            </fieldset>
+             <!-- 2. Ressidential Address Details <br> -->
+              <fieldset>
+            <legend>2. Residential Address Details</legend>
+            <div>
+            2.1 District*: 
+            <select name="district" required>
+                <option value="" disabled selected>Select District</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Rangareddy">Rangareddy</option>
+                <option value="Medchal">Medchal</option>
+                <option value="Nalgonda">Nalgonda</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Mancherial">Mancherial</option>
+                </select>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2.2 Mandal*:
+            <select name="mandal" required>
+                <option value="" disabled selected>Select Mandal</option>
+                <option value="Malkajgiri">Malkajgiri</option>
+                <option value="LB Nagar">LB Nagar</option>
+                <option value="Serilingampally">Serilingampally</option>
+                <option value="Quthbullapur">Quthbullapur</option>
+                <option value="Kukatpally">Kukatpally</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div><br><br>
+            <div>
+            2.3 Village / Town*: 
+            <input type="text" name="village_town" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            2.4 Pincode*:
+            <input type="text" name="pincode" required pattern="[0-9]{6}">
+            </div><br>
+            2.5 Address*:
+            <textarea name="address" id="" maxlength="150" required></textarea>
+            </fieldset>
+            <!-- 3. School Details <br> -->
+            <fieldset>
+            <legend>3. School Details</legend>
+            <div>
+            3.1 District*: 
+            <select name="District">
+                <option value="" disabled selected>Select District</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Rangareddy">Rangareddy</option>
+                <option value="Medchal">Medchal</option>
+                <option value="Nalgonda">Nalgonda</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Mancherial">Mancherial</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3.2 Mandal*:
+            <select name="Mandal">
+                <option value="" disabled selected>Select Mandal</option>
+                <option value="Malkajgiri">Malkajgiri</option>
+                <option value="LB Nagar">LB Nagar</option>
+                <option value="Serilingampally">Serilingampally</option>
+                <option value="Quthbullapur">Quthbullapur</option>
+                <option value="Kukatpally">Kukatpally</option>
+                <option value="Chennur">Chennur</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div><br>
+            <div>
+            3.3 School Name*:
+            <input type="text" name="school_name" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3.4 Class*:
+            <select name="class" required>
+                <option value="" disabled selected>Select Class</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option> 
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            3.5 Admission number*:
+            <input type="text" name="admission_number" required>
+            </div><br>  
+            <div>
+            3.6 School Address*:
+            <textarea name="school_address" id="" maxlength="150" required></textarea>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3.7 School Pincode*:
+            <input type="text" name="school_pincode" required pattern="[0-9]{6}">
+            </div><br>
+        </fieldset>
+         <!-- 4. Root Details <br> -->
+        <fieldset>
+            <legend>4. Route Details</legend>
+            <div>
+            4.1 At which center you want collect the ID/pass*:
+            <select name="collection_center" required>
+                <option value="" disabled selected>Select Center</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mancherial">Mancherial</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            4.2 Pass type:
+            <select name="pass_type" required>
+                <option value="" disabled selected>Select Pass Type</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Half Yearly">Half Yearly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+            </div><br>
+             4.3 Payment Mode*:
+            <div>
+            <input type="radio" name="payment_mode" value="Cash" required> Cash
+            <input type="radio" name="payment_mode" value="Online" required> Online
+            <input type="radio" name="payment_mode" value="Offline"> Offline<br>
+            </div><br>
+            4.4 Pass Delivery Mode*:
+            <select name="delivery_mode" required>
+                <option value="" selected>Select Delivery Mode</option>
+                <option value="In Person">In Person</option>
+                <option value="Courier">Courier</option>
+            </select>
+            </div>
+        </fieldset>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Application" style="display: block; margin: auto; padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+    </form>
+</body>
+</html>
